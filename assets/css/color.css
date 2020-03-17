@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,600,700,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap');
+
+:root {
+  --white: #ffffff;
+  --gary: #464646;
+  --darkgary: #555555;
+  --lightgary: #A8A8A8;
+  --whitegary: #F7F7F7;
+  --irongrey: #C7C7CC;
+  --red: #FB2705;
+  --darkred: #98534E;
+  --black: #000000;
+}
+
+body {
+  color: var(--gary);
+  background-color: var(--white);
+}
+
+p {
+  color: var(--darkgary);
+}
+
+/*=== START-Navigetion Bar ===*/
+
+#navbar {
+  background: var(--whitegary);
+}
+
+/*=== END-Navigetion Bar ===*/
+
+/*=== START-修繕服務列表 ===*/
+
+p.list-group-time {
+  color: var(--lightgary);
+}
+
+/*=== END-修繕服務列表 ===*/
+
+/*=== START-Form ===*/
+
+.registercontpage {
+  background: var(--white);
+}
+
+.btn-circle {
+  background: var(--red);
+}
+
+.btn-default[disabled] {
+    background-color: #FFFFFF;
+    border-color: #A8A8A8;
+    color: rgba(168, 168, 168, 1);
+}
+
+.stepwizard-step button[disabled] {
+  opacity: 1 !important;
+  filter: alpha(opacity=100) !important;
+}
+
+.stepwizard-row:before {
+  background-color: #ccc;
+}
+
+.form-control,
+.section {
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc !important;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+.form-control:focus,
+.section:focus {
+  outline: 1px solid var(--gary);
+  box-shadow: none;
+}
+
+ul.period li.perio-item {
+  background: var(--whitegary);
+}
+
+ul.period li.perio-item.active {
+  background: var(--gary);
+  color: var(--white);
+}
+
+.repair-confirm-area {
+  border-top: 1px var(--irongrey) solid;
+}
+
+.repair-confirm-area:first-child {
+    border-top: 0px var(--lightgary) solid;
+}
+
+.repair-confirm-tit {
+  color: var(--darkred);
+}
+
+.repair-confirm-img {
+  border: 1px solid #ccc;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+span.repair-confirm-item {
+  color: var(--black);
+}
+
+/*=== END-Form ===*/
+
+/*=== START-popup ===*/
+
+.lity {
+  background: #0b0b0b;
+  background: rgba(0, 0, 0, 0.9);
+  outline: none !important;
+  opacity: 0;
+}
+
+.lity.lity-opened {
+  opacity: 1;
+}
+
+.lity.lity-closed {
+  opacity: 0;
+}
+
+.lity-content:after {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+.lity-close {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.lity-close:hover,
+.lity-close:focus,
+.lity-close:active,
+.lity-close:visited {
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.lity-iframe-container iframe {
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  background: #000;
+}
+
+/*=== END-popup ===*/
+
+/*=== START-上傳圖片 ===*/
+
+.repair-upload-area {
+  border: 1px solid #ccc;
+  background-color: #e5e5e5;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+
+#repair-upload {
+  opacity: 0;
+}
+
+.repair-upload-here .fa {
+  color: var(--lightgary);
+}
+
+/*=== END-上傳圖片 ===*/
+
+
+
+/*=== START-置底button ===*/
+
+.bottom-align-next {
+  background: var(--gary);
+}
+
+.bottom-align-next p,
+.bottom-align-close p {
+  color: var(--white);
+}
+
+.bottom-align-close {
+  background: var(--darkred);
+}
+
+/*=== END-置底button ===*/
+
+/*=== START-BTN ===*/
+
+.btn-primary {
+  color: #fff;
+  background-color: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.2rem rgba(251, 39, 5, .3);
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: rgba(168, 168, 168, 1);
+  border-color: rgba(168, 168, 168, 1);
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  color: #fff;
+  background-color: var(--red);
+  border-color: var(--red);
+  box-shadow: 0 0 0 0.2rem rgba(251, 39, 5, 0.5);
+}
+
+.btn-primary.disabled, .btn-primary:disabled {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: rgba(254,254,254,.5);
+  border-color: rgba(254,254,254,.5);
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/*=== END-BTN ===*/
+
+
+
+
