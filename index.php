@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!-- START CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-reboot.css"> 
-    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/color.css">
+    <link rel="stylesheet" type="text/css" href="home/assets/css/bootstrap-reboot.css"> 
+    <link rel="stylesheet" type="text/css" href="home/assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="home/assets/fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="home/assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="home/assets/css/color.css">
     <!-- END CSS -->
 
 </head>
@@ -45,37 +45,37 @@
         <ul class="list-group list-group-flush">
             
             <li class="list-group-item">
-                <a href="repair-list.html">
+                <a href="/repair-list">
                     <div class="list-group-ui-left">
-                         <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
+                         <img src="home/assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
                     <div class="list-group-font">
                         <p class="list-group-title">修繕服務</p>
                         <!-- <p class="list-group-time">2020-04-13</p> -->
                     </div>
                     <div class="list-group-ui-right">
-                         <img src="assets/img/ui/fa-chevron-right.png" class="img-fluid">
+                         <img src="home/assets/img/ui/fa-chevron-right.png" class="img-fluid">
                     </div>
                 </a>
             </li>
             
             <li class="list-group-item">
-                <a href="housing-list.html">
+                <a href="/housing-list">
                     <div class="list-group-ui-left">
-                         <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
+                         <img src="home/assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
                     <div class="list-group-font">
                         <p class="list-group-title">房屋租管</p>
                         <!-- <p class="list-group-time">2020-03-09</p> -->
                     </div>
                     <div class="list-group-ui-right">
-                         <img src="assets/img/ui/fa-chevron-right.png" class="img-fluid">
+                         <img src="home/assets/img/ui/fa-chevron-right.png" class="img-fluid">
                     </div>
                 </a>
             </li>       
             
             <!-- <li class="list-group-item">
-                <a href="repair-content.html">
+                <a href="repair-content.php">
                     <div class="list-group-ui-left">
                          <img src="img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
@@ -96,7 +96,7 @@
 
     <!--=== START-置底button ===-->
    <!--  <div class="bottom-align-next">
-        <a href="repair-step.html"><p>新增服務</p></a>
+        <a href="repair-step.php"><p>新增服務</p></a>
     </div> -->
     <!-- <div class="bottom-align-close">
         <p>關閉</p>
