@@ -1,23 +1,8 @@
-<!DOCTYPE html>
-<html lang="zh-Hant-TW">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<?php include_once 'layouts/header.php';?>
 
-    <!-- 控制手機顯示比例固定，顯示比例固定 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <!-- START CSS -->
-    <link rel="stylesheet" type="text/css" href="home/assets/css/bootstrap-reboot.css"> 
-    <link rel="stylesheet" type="text/css" href="home/assets/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="home/assets/fonts/font-awesome/css/font-awesome.css">
-    <link rel="stylesheet" type="text/css" href="home/assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="home/assets/css/color.css">
-    <!-- END CSS -->
-
-</head>
-
-<body>
+<!-- ============= START main ============= -->
+<div id="content">
+    <section class="main-content">
 
     <!--=== START-Navigetion Bar ===-->
     <div id="navbar">
@@ -47,14 +32,14 @@
             <li class="list-group-item">
                 <a href="/repair-list">
                     <div class="list-group-ui-left">
-                         <img src="home/assets/img/ui/fa-wrench-gary.png" class="img-fluid">
+                         <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
                     <div class="list-group-font">
                         <p class="list-group-title">修繕服務</p>
                         <!-- <p class="list-group-time">2020-04-13</p> -->
                     </div>
                     <div class="list-group-ui-right">
-                         <img src="home/assets/img/ui/fa-chevron-right.png" class="img-fluid">
+                         <img src="assets/img/ui/fa-chevron-right.png" class="img-fluid">
                     </div>
                 </a>
             </li>
@@ -62,14 +47,14 @@
             <li class="list-group-item">
                 <a href="/housing-list">
                     <div class="list-group-ui-left">
-                         <img src="home/assets/img/ui/fa-wrench-gary.png" class="img-fluid">
+                         <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
                     <div class="list-group-font">
                         <p class="list-group-title">房屋租管</p>
                         <!-- <p class="list-group-time">2020-03-09</p> -->
                     </div>
                     <div class="list-group-ui-right">
-                         <img src="home/assets/img/ui/fa-chevron-right.png" class="img-fluid">
+                         <img src="assets/img/ui/fa-chevron-right.png" class="img-fluid">
                     </div>
                 </a>
             </li>       
@@ -103,5 +88,8 @@
     </div> -->
     <!--=== END-置底button ===-->    
 
-</body>
-</html>
+    </section>
+</div>
+<!-- ============= END main ============= -->
+<?php include_once 'layouts/footer.php';?>
+
