@@ -1,9 +1,5 @@
 <?php include_once 'layouts/header.php';?>
 
-<!-- ============= START main ============= -->
-<div id="content">
-    <section class="main-content">
-
     <!--=== START-Navigetion Bar ===-->
     <div id="navbar">
 
@@ -23,14 +19,15 @@
 
     </div>
     <!--=== END-Navigetion Bar ===-->    
-
+<div id="content">
+<section class="main-content">
     <!--=== START-列表 ===-->
     <div id="repair-list">
 
         <ul class="list-group list-group-flush">
             
             <li class="list-group-item">
-                <a href="/repair-list">
+                <a href="repair-list.php">
                     <div class="list-group-ui-left">
                          <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>
@@ -45,7 +42,7 @@
             </li>
             
             <li class="list-group-item">
-                <a href="/housing-list">
+                <a href="housing-list.php">
                     <div class="list-group-ui-left">
                          <img src="assets/img/ui/fa-wrench-gary.png" class="img-fluid">
                     </div>

@@ -28,7 +28,7 @@
         <div id="navbar">
             <div class="navbar-group">
                 <div class="navbarui-left">
-                    <a href="repair-list.html">
+                    <a href="repair-list.php">
                         <img class="img-fluid" src="assets/img/ui/fa-chevron-left.png"/>
                     </a>
                 </div>
@@ -430,7 +430,7 @@
                     </div>
                     <!--=== START-置底button ===-->
                     <div class="bottom-align-close">
-                        <a href="exit.html">
+                        <a href="exit.php">
                             <p>
                                 關閉
                             </p>
@@ -455,7 +455,7 @@
         <!-- js-Step2 上傳 -->
         <script>
             $("#repair-upload").change(function(){
-        $("#repair-upload-img").html(""); // 清除預覽
+        $("#repair-upload-img").php(""); // 清除預覽
         readURL(this);
     });
 

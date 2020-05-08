@@ -26,7 +26,7 @@
         <div id="navbar">
             <div class="navbar-group">
                 <div class="navbarui-left">
-                    <a href="housing-list.html">
+                    <a href="housing-list.php">
                         <img class="img-fluid" src="assets/img/ui/fa-chevron-left.png"/>
                     </a>
                 </div>
@@ -175,7 +175,7 @@
         <!--=== END-內容 ===-->
         <!--=== START-置底button ===-->
         <div class="bottom-align-close">
-            <a href="exit.html">
+            <a href="exit.php">
                 <p>
                     關閉
                 </p>

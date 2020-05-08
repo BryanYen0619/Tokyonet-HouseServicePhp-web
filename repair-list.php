@@ -26,7 +26,7 @@
         <div id="navbar">
             <div class="navbar-group">
                 <div class="navbarui-left">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img class="img-fluid" src="assets/img/ui/fa-chevron-left.png"/>
                     </a>
                 </div>
@@ -44,7 +44,7 @@
         <div id="repair-list">
             <ul class="list-group list-group-flush">
                 <li class="list-group-item">
-                    <a href="repair-content.html">
+                    <a href="repair-content.php">
                         <div class="list-group-ui-left">
                             <img class="img-fluid" src="assets/img/ui/fa-wrench-gary.png">
                             </img>
@@ -64,7 +64,7 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a href="repair-content.html">
+                    <a href="repair-content.php">
                         <div class="list-group-ui-left">
                             <img class="img-fluid" src="assets/img/ui/fa-wrench-gary.png">
                             </img>
@@ -84,7 +84,7 @@
                     </a>
                 </li>
                 <li class="list-group-item">
-                    <a href="repair-content.html">
+                    <a href="repair-content.php">
                         <div class="list-group-ui-left">
                             <img class="img-fluid" src="assets/img/ui/fa-wrench-gary.png">
                             </img>
@@ -108,14 +108,14 @@
         <!--=== END-修繕服務列表 ===-->
         <!--=== START-置底button ===-->
         <div class="bottom-align-next">
-            <a href="repair-step.html">
+            <a href="repair-step.php">
                 <p>
                     新增服務
                 </p>
             </a>
         </div>
         <div class="bottom-align-close">
-            <a href="exit.html">
+            <a href="exit.php">
                 <p>
                     關閉
                 </p>
