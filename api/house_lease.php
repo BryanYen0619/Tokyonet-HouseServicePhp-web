@@ -32,6 +32,9 @@ switch ($method) {
 }
 
 function addLease($input) {
+    $member_community_id = $input['community_id'];
+    $member_user_id = $input['user_id'];
+
     $member_category_id = $input['category_id'];
     $member_name = $input['name'];
     $member_phone = $input['phone'];
@@ -50,7 +53,7 @@ function addLease($input) {
     $insertId = -1;
    
     // 新增
-    $instertOrderSerpSql = "INSERT INTO $db_house_service_lease (category_id, name, phone, time, note, title, address, age, floor, level) VALUES ('$member_category_id', '$member_name', '$member_phone', '$member_time', '$member_note', '$member_title', '$member_address', '$member_age', '$member_floor', '$member_level')";
+    $instertOrderSerpSql = "INSERT INTO $db_house_service_lease (community_id, user_id, category_id, name, phone, time, note, title, address, age, floor, level) VALUES ('$member_community_id','$member_user_id','$member_category_id', '$member_name', '$member_phone', '$member_time', '$member_note', '$member_title', '$member_address', '$member_age', '$member_floor', '$member_level')";
     // if ($isHightPhpVersion) {
     //     $insertResult = mysqli_query($mysql, $instertOrderSerpSql);
     //     if (!$insertResult) {
@@ -63,7 +66,7 @@ function addLease($input) {
         if (!$insertResult) {
             $errormessage = mysql_error();
         } else {
-            $insertId = mysqli_insert_id();
+            $insertId = mysql_insert_id();
         }
     // }
 
@@ -78,13 +81,14 @@ function addLease($input) {
 }
 
 function getLease() {
-    $member_id = $_GET["id"];
+    $member_community_id = $_GET["community_id"];
+    $member_user_id = $_GET["user_id"];
     
     // DB
     $db_house_service_lease = 'house_service_lease';
  
     // 查詢
-    $selectSerpSql = "SELECT id, category_id, name, phone, time, note, title, address, age, floor, level FROM $db_house_service_lease WHERE id = '$member_id' ";
+    $selectSerpSql = "SELECT * FROM $db_house_service_lease WHERE community_id = '$member_community_id' AND user_id = '$member_user_id' ";
 
     $rows = array();
     // if ($isHightPhpVersion) {
