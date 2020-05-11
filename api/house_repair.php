@@ -71,7 +71,7 @@ function addRepair($input) {
         $data = array('errorcode' => 500, 'errormessage' => $errormessage);
         http_response_code(500);
     } else {    
-        $data = array('errorcode' => 0, 'errormessage' => "Success.", 'data' => array('id' => , $insertId));
+        $data = array('errorcode' => 0, 'errormessage' => "Success.", 'data' => array('id' => $insertId));
         http_response_code(200);
     }
     echo json_encode($data);
