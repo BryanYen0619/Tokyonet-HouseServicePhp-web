@@ -14,34 +14,42 @@ $input = json_decode(file_get_contents('php://input'), true);
 // create SQL based on HTTP method
 switch ($method) {
     case 'GET':
-        #$sql = "select * from `$table`".($key?" WHERE id=$key":''); break;
+        #$sql = "select * from $table".($key?" WHERE id=$key":''); break;
         getRepair();
         break;
     case 'PUT':
-        #$sql = "update `$table` set $set where id=$key"; break;
+        #$sql = "update $table set $set where id=$key"; break;
         echo 'Not Support PUT' . "\n";
         break;
     case 'POST':
         addRepair($input);
         break;
     case 'DELETE':
-        #$sql = "delete `$table` where id=$key"; break;
+        #$sql = "delete $table where id=$key"; break;
         echo 'Not Support DELETE' . "\n";
         // deleterepair($input);
         break;
 }
 
 function addRepair($input) {
+    $member_community_id = $input['community_id'];
+    $member_user_id = $input['user_id'];
+
     $member_category_id = $input['category_id'];
     $member_name = $input['name'];
     $member_phone = $input['phone'];
-    $member_time = $input['time'];
-    $member_note = $input['note'];
-    $member_title = $input['title'];        // 物件名稱
     $member_address = $input['address'];
-    $member_age = $input['age'];
-    $member_floor = $input['floor'];
-    $member_level = $input['level'];
+    $member_email = $input['email'];
+    $member_fax = $input['fax'];
+    $member_info = $input['info'];
+    $member_time = $input['time'];
+    $member_rang = $input['rang'];          //時段, 0:早上, 1:下午, 2:晚上
+    if (isset($input['note'])) {
+        $member_note = $input['note'];
+    } else {
+        $member_note = null;
+    }
+    
 
     // DB
     $db_house_service_repair = 'house_service_repair';
@@ -50,7 +58,9 @@ function addRepair($input) {
     $insertId = -1;
    
     // 新增
-    $instertOrderSerpSql = "INSERT INTO $db_house_service_repair (community_id, category_id, name, phone, address, email, fax, info, time, rang, note) VALUES ('$member_category_id', '$member_name', '$member_phone', '$member_time', '$member_note', '$member_title', '$member_address', '$member_age', '$member_floor', '$member_level')";
+    $instertOrderSerpSql = "INSERT INTO $db_house_service_repair 
+    (community_id, user_id, category_id, name, phone, address, email, fax, info, time, rang, note) 
+    VALUES ('$member_community_id', '$member_user_id', '$member_category_id', '$member_name', '$member_phone', '$member_address', '$member_email', '$member_fax', '$member_info', '$member_time', '$member_rang', '$member_note')";
     // if ($isHightPhpVersion) {
     //     $insertResult = mysqli_query($mysql, $instertOrderSerpSql);
     //     if (!$insertResult) {
@@ -78,13 +88,14 @@ function addRepair($input) {
 }
 
 function getRepair() {
-    $member_id = $_GET["id"];
+    $member_community_id = $_GET["community_id"];
+    $member_user_id = $_GET["user_id"];
 
     // DB
     $db_house_service_repair = 'house_service_repair';
  
     // 查詢
-    $selectSerpSql = "SELECT id, category_id, name, phone, time, note, title, address, age, floor, level FROM $db_house_service_repair WHERE id = '$member_id' ";
+    $selectSerpSql = "SELECT * FROM $db_house_service_repair WHERE community_id = '$member_community_id' AND user_id = '$member_user_id' ";
 
     $rows = array();
     // if ($isHightPhpVersion) {
